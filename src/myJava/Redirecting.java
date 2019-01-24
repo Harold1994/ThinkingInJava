@@ -17,7 +17,7 @@ public class Redirecting {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		PrintStream console = System.out;
-		BufferedInputStream in = new BufferedInputStream(new FileInputStream("Redirecting.java"));
+		BufferedInputStream in = new BufferedInputStream(new FileInputStream("b.txt"));
 		PrintStream out = new PrintStream(new BufferedOutputStream(new FileOutputStream("test.out")));
 		System.setIn(in);
 		System.setOut(out);

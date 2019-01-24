@@ -17,8 +17,8 @@ class Data implements Serializable{
 public class Worm implements Serializable {
 	public Random rand = new Random(47);
 	public Data [] data = {
-			new Data(rand.nextInt(10)),
-			new Data(rand.nextInt(10)),
+			new Data(rand.nextInt(1)),
+			new Data(rand.nextInt(108)),
 			new Data(rand.nextInt(10))
 	};
 	private Worm next;

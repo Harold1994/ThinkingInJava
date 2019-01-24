@@ -19,13 +19,14 @@ public class GetData {
 			System.out.print(c+ " ");
 		System.out.println();
 		bb.rewind();
-		bb.asShortBuffer().put((short)1442);
-		short s;
-		while((s = bb.getShort()) != 0)
-			System.out.print(s+ " ");
-		System.out.println();
-		bb.rewind();
-		System.out.println(bb.rewind());
+		bb.asShortBuffer().put((short) 71142);
+		System.out.println(bb.getInt());
+//		short s;
+//		while((s = bb.getShort()) != 0)
+//			System.out.print(s+ " ");
+//		System.out.println();
+//		bb.rewind();
+//		System.out.println(bb.rewind());
 	}
 
 }

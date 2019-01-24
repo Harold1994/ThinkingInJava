@@ -1,5 +1,6 @@
 package myJava;
 
+import java.io.DataInputStream;
 import java.io.File;
 
 import org.omg.CORBA.PRIVATE_MEMBER;
@@ -62,8 +63,6 @@ public class MakeDirectories {
 			}
 			fileData(f);
 		}
-		
-
 	}
 
 }

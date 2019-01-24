@@ -2,6 +2,7 @@ package myJava;
 
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
+import java.nio.DoubleBuffer;
 import java.nio.LongBuffer;
 
 public class ViewBuffers {
@@ -29,6 +30,11 @@ public class ViewBuffers {
 			System.out.print(lb.position() + "->" +lb.get()+",");
 		}
 		System.out.println();
+
+		DoubleBuffer db  = ((ByteBuffer) bb.rewind()).asDoubleBuffer();
+		System.out.println("DoubleBuffer");
+		while (db.hasRemaining())
+			System.out.println(db.position() + "->" + db.get() + ",");
 		
 	}
 
